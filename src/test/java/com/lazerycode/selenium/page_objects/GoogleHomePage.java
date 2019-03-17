@@ -23,9 +23,9 @@ public class GoogleHomePage {
         return this;
     }
 
-    public GoogleHomePage submitSearch() {
+    public GoogleHomePage submitSearch() throws InterruptedException{
         googleSearch.findWebElement().submit();
-
+        Thread.sleep(3000);
         return this;
     }
 

@@ -30,7 +30,6 @@ public class ScreenshotListener extends TestListenerAdapter {
                 }
             }
         }
-
         return fileCreated;
     }
 
