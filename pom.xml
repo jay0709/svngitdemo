@@ -55,10 +55,10 @@
         <read.timeout>30000</read.timeout>
         <connection.timeout>40000</connection.timeout>
         <retry.attempts>4</retry.attempts>
-        <browser>firefox</browser>
+        <browser>chrome</browser>
         <threads>1</threads>
         <remote>false</remote>
-        <headless>true</headless>
+        <headless>false</headless>
         <seleniumGridURL/>
         <platform/>
         <browserVersion/>
