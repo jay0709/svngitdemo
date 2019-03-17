@@ -61,6 +61,7 @@ public class GoogleExampleIT extends DriverBase {
 
         googleHomePage.enterSearchTerm("Avengers End Game")
                 .submitSearch();
+        System.out.println("Search Triggered");
 
         // Google's search is rendered dynamically with JavaScript.
         // Wait for the page to load, timeout after 10 seconds
