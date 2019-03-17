@@ -59,13 +59,13 @@ public class GoogleExampleIT extends DriverBase {
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
 
-        googleHomePage.enterSearchTerm("Avengers End")
+        googleHomePage.enterSearchTerm("Avengers End Game")
                 .submitSearch();
 
         // Google's search is rendered dynamically with JavaScript.
         // Wait for the page to load, timeout after 10 seconds
         WebDriverWait wait = new WebDriverWait(driver, 10, 100);
-        wait.until(pageTitleStartsWith("Avengers End"));
+        wait.until(pageTitleStartsWith("Avengers End Game"));
 
         // Should see: "cheese! - Google Search"
         System.out.println("Page title is: " + driver.getTitle());
